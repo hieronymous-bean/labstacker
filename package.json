@@ -1,0 +1,31 @@
+{
+  "name": "labstacker",
+  "version": "0.0.1",
+  "description": "labstacker blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hieronymous-bean/labstacker.git"
+  },
+  "author": "hieronymous-bean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hieronymous-bean/labstacker/issues"
+  },
+  "homepage": "https://github.com/hieronymous-bean/labstacker#readme",
+  "dependencies": {
+    "handlebars": "^4.7.6"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-stylelint": "^13.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.0.2"
+  }
+}
