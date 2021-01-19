@@ -1,0 +1,47 @@
+{
+    "name": "labstacker",
+    "description": "Primary theme for Labstacker.com interface",
+    "version": "0.0.1",
+    "engines": {
+        "ghost-api": "v3"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Jeffrey Brown",
+        "email": "jeffrey@jeffreyallanbrown.com"
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "config": {
+        "posts_per_page": 25,
+        "image_sizes": {
+            "xxs": {
+                "width": 30
+            },
+            "xs": {
+                "width": 100
+            },
+            "s": {
+                "width": 300
+            },
+            "m": {
+                "width": 600
+            },
+            "l": {
+                "width": 1000
+            },
+            "xl": {
+                "width": 2000
+            }
+        }
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-dart-sass": "^1.0.2",
+        "gulp-livereload": "^4.0.2",
+        "gulp-uglify": "^3.0.2",
+        "gulp-zip": "^5.0.2"
+    }
+}
