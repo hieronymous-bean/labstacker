@@ -15,10 +15,10 @@
 	<link rel="stylesheet" href="{{asset "css/font-icons.css"}}" />
 	<link rel="stylesheet" href="{{asset "css/style.css"}}" />
 
-	<link rel="shortcut icon" href="{{asset | "images/favicon.ico"}}">
-	<link rel="apple-touch-icon" href="{{asset | "images/apple-touch-icon.png"}}">
-	<link rel="apple-touch-icon" sizes="72x72" href="{{asset | "images/apple-touch-icon-72x72.png"}}">
-	<link rel="apple-touch-icon" sizes="114x114" href="{{asset | "images/apple-touch-icon-114x114.png"}}">
+	<link rel="shortcut icon" href="{{asset | "images/favicon.ico"}}" />
+	<link rel="apple-touch-icon" href="{{asset | "images/apple-touch-icon.png"}}" />
+	<link rel="apple-touch-icon" sizes="72x72" href="{{asset | "images/apple-touch-icon-72x72.png"}}" />
+	<link rel="apple-touch-icon" sizes="114x114" href="{{asset | "images/apple-touch-icon-114x114.png"}}" />
 
 	<script src="{{asset "js/lazysizes.min.js"}}"></script>
 
@@ -36,11 +36,7 @@
 	
 	{{{body}}}
 
-	<div id="back-to-top">
-		<a href="#top" aria-label="Go to top">
-			<i class="ui-arrow-up"></i>
-		</a>
-	</div>
+	{{ >_backtotop }}
   
 	<script src="{{asset | "js/jquery.min.js"}}"></script>
 	<script src="{{asset | "js/bootstrap.min.js"}}"></script>

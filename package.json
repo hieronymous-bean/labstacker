@@ -13,6 +13,11 @@
     "browserslist": [
         "defaults"
     ],
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
     "config": {
         "posts_per_page": 25,
         "image_sizes": {
@@ -37,11 +42,16 @@
         }
     },
     "devDependencies": {
+        "beeper": "^2.1.0",
+        "fs": "0.0.1-security",
         "gulp": "^4.0.2",
         "gulp-concat": "^2.6.1",
         "gulp-dart-sass": "^1.0.2",
+        "gulp-handlebars": "^5.0.2",
         "gulp-livereload": "^4.0.2",
         "gulp-uglify": "^3.0.2",
-        "gulp-zip": "^5.0.2"
+        "gulp-zip": "^5.0.2",
+        "inquirer": "^7.3.3",
+        "pump": "^3.0.0"
     }
 }
