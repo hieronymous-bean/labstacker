@@ -8,46 +8,46 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="">
 
-	<!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Poppins:400,600,700%7CRoboto:400,400i,700' rel='stylesheet'>
 
 	<link rel="stylesheet" href="{{asset "css/bootstrap.min.css"}}" />
 	<link rel="stylesheet" href="{{asset "css/font-icons.css"}}" />
 	<link rel="stylesheet" href="{{asset "css/style.css"}}" />
 
-	<link rel="shortcut icon" href="{{asset | "images/favicon.ico"}}" />
-	<link rel="apple-touch-icon" href="{{asset | "images/apple-touch-icon.png"}}" />
-	<link rel="apple-touch-icon" sizes="72x72" href="{{asset | "images/apple-touch-icon-72x72.png"}}" />
-	<link rel="apple-touch-icon" sizes="114x114" href="{{asset | "images/apple-touch-icon-114x114.png"}}" />
+	<link rel="shortcut icon" href="{{asset "images/favicon.ico"}}" />
+	<link rel="apple-touch-icon" href="{{asset "images/apple-touch-icon.png"}}" />
+	<link rel="apple-touch-icon" sizes="72x72" href="{{asset "images/apple-touch-icon-72x72.png"}}" />
+	<link rel="apple-touch-icon" sizes="114x114" href="{{asset "images/apple-touch-icon-114x114.png"}}" />
 
 	<script src="{{asset "js/lazysizes.min.js"}}"></script>
 
 	{{ghost_head}}
-
+	
 </head>
 
 <body class="{{body_class}} bg-darker">
 
-  	{{ >_preloader }}
+  	{{> _preloader}}
 
 	{{#if @labs.members}}
-		{{ >_subscribemodal }}
+
+		{{> _subscribemodal}}
+
 	{{/if}}
 	
 	{{{body}}}
 
-	{{ >_backtotop }}
+	{{> _backtotop}}
   
-	<script src="{{asset | "js/jquery.min.js"}}"></script>
-	<script src="{{asset | "js/bootstrap.min.js"}}"></script>
-	<script src="{{asset | "js/easing.min.js"}}"></script>
-	<script src="{{asset | "js/flickity.pkgd.min.js"}}"></script>
-	<script src="{{asset | "js/twitterFetcher_min.js"}}"></script>
-	<script src="{{asset | "js/modernizr.min.js"}}"></script>
-	<script src="{{asset | "js/scripts.js"}}"></script>
+	<script src="{{asset "js/jquery.min.js"}}"></script>
+	<script src="{{asset "js/bootstrap.min.js"}}"></script>
+	<script src="{{asset "js/easing.min.js"}}"></script>
+	<script src="{{asset "js/flickity.pkgd.min.js"}}"></script>
+	<script src="{{asset "js/twitterFetcher_min.js"}}"></script>
+	<script src="{{asset "js/modernizr.min.js"}}"></script>
+	<script src="{{asset "js/scripts.js"}}"></script>
 
 	<script>
-		// Twitter Fetcher // 
 		var config1 = {
 		"id": '594366594521804800',
 		"domId": 'tweets',
@@ -64,6 +64,7 @@
 	{{{block "scripts"}}}
 
     {{ghost_foot}}
-	
+
 </body>
+
 </html>
