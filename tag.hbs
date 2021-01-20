@@ -1,0 +1,29 @@
+{{!< default}}
+
+{{> _navigation}}
+
+<div class="main-container" id="main-container">  
+    <section class="section-wrap pb-30">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-8 blog__content mb-30">
+              		
+              		<h1 class="page-title site-title">{{name}}</h1>
+		            <h2 class="site-description">
+		                {{#if description}}
+		                	{{description}}
+		                {{else}}
+		                	A collection of {{plural pagination.total empty='No posts' singular='% post' plural='% posts'}}
+		                {{/if}}
+		            </h2>
+
+		            <div class="col-md-4">
+		            	{{#foreach posts visibility="all"}}
+                			{{> post-card}}
+            			{{/foreach}}
+		            </div>
+              	</div>
+        	</div>
+        </div>
+    </section>
+</div>

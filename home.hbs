@@ -84,29 +84,19 @@
 			<!-- Recent News -->
 			<section class="content-section section-recent-news tab-post">
 				<div class="section-title-wrap">
-					<h3 class="section-title">Recent News</h3>
+					<h3 class="section-title">Recent Articles</h3>
 
 					<!-- Tabs -->
 					<div class="tabs tab-post__tabs"> 
 						<ul class="tabs__list">
-							<li class="tabs__item tabs__item--active">
-								<a href="#tab-all" class="tabs__trigger">All</a>
-							</li>
-							<li class="tabs__item">
-								<a href="#tab-devices" class="tabs__trigger">Devices</a>
-							</li>
-							<li class="tabs__item">
-								<a href="#tab-robotics" class="tabs__trigger">Robotics</a>
-							</li>
-							<li class="tabs__item">
-								<a href="#tab-aircraft" class="tabs__trigger">Aircraft</a>
-							</li>
-							<li class="tabs__item">
-								<a href="#tab-automobile" class="tabs__trigger">Automobile</a>
-							</li>
+							{{#get "tags" limit="5"}}
+								<li class="tabs__item tabs__item--active">
+									<a href="#tab-all" class="tabs__trigger">All</a>
+								</li>
+							{{/get}}
 						</ul>
-					</div> <!-- end tabs -->
-				</div> <!-- end title wrap -->
+					</div>
+				</div>
 
 				<!-- Tabs Content -->
 				<div class="tabs__content tabs__content-trigger tab-post__tabs-content">
