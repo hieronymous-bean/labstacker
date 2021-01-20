@@ -1,0 +1,49 @@
+<article class="post-card {{post_class}} {{#unless feature_image}}no-image{{else}}{{#is "home"}}{{#has index="nth:6"}}post-card-large{{/has}}{{/is}}{{/unless}} entry">                
+    {{#if feature_image}}
+    	<div class="entry__img-holder">
+	    	<a href="{{url}}">
+	        	<div class="thumb-container">
+	        		<img class="entry__img lazyload post-card-image" srcset="{{img_url feature_image size="s"}} 300w,{{img_url feature_image size="m"}} 600w,{{img_url feature_image size="l"}} 1000w,{{img_url feature_image size="xl"}} 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy" src="{{img_url feature_image size="m"}}" alt="{{title}}" />
+	        	</div>
+	    	</a>
+    	</div>
+    {{/if}}
+    
+
+    <div class="entry__body">
+    	<div class="entry__header">
+
+    		{{#if primary_tag}}
+                {{#primary_tag}}
+                		<a href="{{primary_tag.url}}" class="entry__meta-category post-card-primary-tag">{{name}}</a>
+                {{/primary_tag}}
+            {{/if}}
+
+        	<h2 class="entry__title">
+          		<a href="{{url}}">{{title}}</a>
+        	</h2>
+        	<ul class="entry__meta">
+	          	
+	          	<li class="entry__meta-date">
+	            <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
+	          	</li>
+          	
+	          	{{#foreach authors}}
+	           	<li class="author-list-item">
+	                <div class="author-name-tooltip">
+	                    {{name}}
+	                </div>
+	            </li>
+	            {{/foreach}}
+
+        	</ul>
+      	</div>
+
+      	{{#if feature_image}}
+      			<div class="entry__excerpt"><p>{{excerpt words="30"}}</p></div>
+        	{{else}}
+            	<div class="entry__excerpt"><p>{{excerpt words="50"}}</p></div>
+        {{/if}}
+        
+    </div>
+</article>
