@@ -7,70 +7,46 @@
 
 	{{#get "posts" filter="featured:true" include="authors,tags" limit="5" as |featured|}}
 		{{#if featured}}
-			<section class="hero">
-				<div id="flickity-hero" class="carousel-main">
-					{{#foreach featured}}
 
-					<div class="carousel-cell hero__slide">
-						<article class="hero__slide-entry entry">
-							{{#if feature_image}}
-	                            <style>
-	                              #featured-bg-{{id}} {
-	                                background-image: url({{img_url feature_image size='l'}});
-	                              }
-	                            
-	                              @media(max-width: 768px) {
-	                                #featured-bg-{{id}} {
-	                                  background-image: url({{img_url feature_image size='m'}});
-	                                }
-	                              }
-	                            </style>
-                            	<div class="hero__slide-thumb-bg-holder" id="featured-bg-{{id}}">
-									<div class="bottom-gradient"></div>
-								</div>
-                          	{{/if}}
-							
-							
-							<div class="hero__slide-thumb-text-holder">
-								<div class="container">
-									{{#if primary_tag}}
-			                            <a href="{{primary_tag.url}}" class="entry__meta-category entry__meta-category--label">{{primary_tag.name}}</a>
+			<section class="featured-posts-masonry">
+
+        		<div class="container">
+
+        			{{#foreach featured}}
+        				{{#has index="0"}}
+        					<div class="featured-posts-masonry__item featured-posts-masonry__item--lg">
+        				{{/has}}
+        				{{#has index="1"}}
+        					<div class="featured-posts-masonry__item featured-posts-masonry__item--sm">
+        				{{/has}}
+        				{{#has index="2"}}
+        					<div class="featured-posts-masonry__item featured-posts-masonry__item">
+        				{{/has}}
+				            <article class="entry featured-posts-masonry__entry">
+				              	<div class="thumb-bg-holder" style="background-image: url({{img_url feature_image size='l'}});">
+				                	<a href="{{url}}" class="thumb-url"></a>
+				                	<div class="bottom-gradient"></div>
+				            	</div>
+
+					            <div class="thumb-text-holder">
+					            	{{#if primary_tag}}
+			                            <a href="{{primary_tag.url}}" class="entry__meta-category entry__meta-category--label">{{primary_tag.name}}</a>   
 			                        {{/if}}
-									   
-									<h2 class="entry__title--lg entry__title--white">
-										<a href="{{url}}">{{title}}</a>
-									</h2>
-								</div>
-							</div>
-						</article>          
-					</div>
+					                
+				                	<h2 class="entry__title--lg entry__title--white">
+				                  		<a href="{{url}}">{{title}}</a>
+				                	</h2>
+					            </div>
+
+				            </article>
+				        </div>
 
 					{{/foreach}}
-
-				</div>
-				<div class="carousel-thumbs-holder">
-					<div class="container">
-						<div id="flickity-thumbs" class="carousel-thumbs">
-							{{#foreach featured}}
-								<div class="carousel-cell">
-									<div class="carousel-thumbs__item">
-										{{#if feature_image}}
-			                            	<div class="carousel-thumbs__img-holder">
-												<img src="{{img_url feature_image}}" alt="{{title}}">
-											</div>
-			                          	{{/if}}
-										
-										<h2 class="carousel-thumbs__title">
-											{{title}}
-										</h2>
-									</div>
-								</div>
-							{{/foreach}}
-						</div>
-					</div>
+        				
 				</div>
 
 			</section>
+
 		{{/if}}
 	{{/get}}
 

@@ -46,7 +46,7 @@
 	position: relative; }
 
 .white {
-	color: #fff; }
+	color: #ffffff; }
 
 .left {
 	float: left; }
@@ -55,7 +55,7 @@
 	float: right; }
 
 .bg-light {
-	background-color: #E3E3E3; }
+	background-color: #f7f7f7	; }
 
 .bg-dark {
 	background-color: #002B4D; }
@@ -3610,15 +3610,15 @@ input.sidenav__search-mobile-input:-ms-input-placeholder {
 	height: 70%;
 	bottom: 0;
 	z-index: 1;
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.5);
 	/* Old browsers */
 	/* FF3.6+ */
 	/* Chrome,Safari4+ */
 	/* Chrome10+,Safari5.1+ */
 	/* Opera 11.10+ */
 	/* IE10+ */
-	background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(transparent));
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
 	/* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
 	/* IE6-9 */ }
