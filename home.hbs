@@ -1,189 +1,817 @@
 {{!< default}}
 
-{{> _navigation}}
+{{> _header}}
 
-{{> _featuresheader}}
+{{> _featuredheader}}
 
-<section class="heading-news">
-	<div class="iso-call heading-news-box">
-		<div class="news-post image-post default-size">
-					<img src="upload/news-posts/h1.jpg" alt="">
-					<div class="hover-box">
-						<div class="inner-hover">
-							<a class="category-post travel" href="travel.html">Travel</a>
-							<h2><a href="single-post.html">Lorem ipsum dolor sit amet, consectetuer</a></h2>
-							<ul class="post-tags">
-								<li><i class="fa fa-clock-o"></i><span>27 may 2013</span></li>
-								<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+
+<section class="block-wrapper">
+	<div class="container">
+		<div class="row">
+
+			{{> _sidebar}}
+
+			<div class="col-md-7 col-sm-8">
+				<div class="block-content">
+					<div class="slider-caption-box">
+						<ul class="filter-slider-posts">
+							<li><a href="#">Today</a></li>
+							<li><a class="active" href="#">Software</a></li>
+							<li><a href="#">Internet</a></li>
+							<li><a href="#">Mobile</a></li>
+							<li><a href="#">Gadgets</a></li>
+							<li><a href="#">Tech Industry</a></li>
+						</ul>
+						<div class="slider-holder">
+							<span>top Stories</span>
+							<ul class="slider-call">
+								<li>
+									<div class="news-post standard-post">
+										<div class="post-gallery">
+											<img src="upload/news-posts/large1.jpg" alt="">
+										</div>
+										<div class="post-content">
+											<h2><a href="single-post.html">Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+												<li><i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
+												<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+												<li><i class="fa fa-eye"></i>872</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="news-post standard-post">
+										<div class="post-gallery">
+											<img src="upload/news-posts/large2.jpg" alt="">
+										</div>
+										<div class="post-content">
+											<h2><a href="single-post.html">Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+												<li><i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
+												<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+												<li><i class="fa fa-eye"></i>872</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="news-post standard-post">
+										<div class="post-gallery">
+											<img src="upload/news-posts/large3.jpg" alt="">
+										</div>
+										<div class="post-content">
+											<h2><a href="single-post.html">Sed arcu. Cras consequat.</a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+												<li><i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
+												<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+												<li><i class="fa fa-eye"></i>872</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="news-post standard-post">
+										<div class="post-gallery">
+											<img src="upload/news-posts/large4.jpg" alt="">
+										</div>
+										<div class="post-content">
+											<h2><a href="single-post.html">Aliquam erat volutpat. </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+												<li><i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
+												<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+												<li><i class="fa fa-eye"></i>872</li>
+											</ul>
+										</div>
+									</div>
+								</li>
 							</ul>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+						</div>
+						<div id="bx-pager">
+							<a data-slide-index="0" href="">
+								Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. 
+								<span><i class="fa fa-clock-o"></i>27 may 2013</span>
+							</a>
+							<a data-slide-index="1" href="">
+								Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.  
+								<span><i class="fa fa-clock-o"></i>27 may 2013</span>
+							</a>
+							<a data-slide-index="2" href="">
+								Sed arcu. Cras consequat. 
+								<span><i class="fa fa-clock-o"></i>27 may 2013</span>
+							</a>
+							<a data-slide-index="3" href="">
+								Aliquam erat volutpat.
+								<span><i class="fa fa-clock-o"></i>27 may 2013</span>
+							</a>	
+						</div>
+						<div class="center-butt">
+							<a class="more-news" href="tech-category.html">More Software News</a>
 						</div>
 					</div>
-				</div>
+					<!-- End slider-caption-box -->
 
-				<div class="image-slider snd-size">
-					<span class="top-stories">TOP STORIES</span>
-					<ul class="bxslider">
-						<li>
-							<div class="news-post image-post">
-								<img src="upload/news-posts/h2.jpg" alt="">
-								<div class="hover-box">
-									<div class="inner-hover">
-										<a class="category-post world" href="world.html">Business</a>
-										<h2><a href="single-post.html">Franca do të bashkëpunojë me Kosovën në ekonomi. </a></h2>
+					<!-- grid box -->
+					<div class="grid-box">
+
+						<div class="title-section">
+							<h1><span>Today's Featured</span></h1>
+						</div>
+
+						<ul class="category-filter-posts">
+							<li><a class="active" href="#">All</a></li>
+							<li><a href="#">Software</a></li>
+							<li><a href="#">Internet</a></li>
+							<li><a href="#">Mobile</a></li>
+							<li><a href="#">Gadgets</a></li>
+						</ul>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="news-post standard-post2">
+									<div class="post-gallery">
+										<img src="upload/news-posts/1.jpg" alt="">
+									</div>
+									<div class="post-title">
+										<h2><a href="single-post.html">LPellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.</a></h2>
 										<ul class="post-tags">
 											<li><i class="fa fa-clock-o"></i>27 may 2013</li>
 											<li><i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
 											<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
-											<li><i class="fa fa-eye"></i>872</li>
+											<li><i class="fa fa-eye"></i>87</li>
 										</ul>
 									</div>
 								</div>
+								<ul class="list-posts">
+									<li>
+										<div class="post-content">
+											<h2><a href="single-post.html">Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.</a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<div class="post-content">
+											<h2><a href="single-post.html">Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
 							</div>
-						</li>
-						<li>
-							<div class="news-post image-post">
-								<img src="upload/news-posts/h7.jpg" alt="">
-								<div class="hover-box">
-									<div class="inner-hover">
-										<a class="category-post sport" href="sport.html">Sport</a>
-										<h2><a href="single-post.html">Phasellus ultrices nulla quis nibh. Quisque a lectus. </a></h2>
+							<div class="col-md-6">
+								<ul class="list-posts">
+									<li>
+										<img src="upload/news-posts/list1.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<img src="upload/news-posts/list2.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non</a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<img src="upload/news-posts/list3.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Suspendisse urna nibh </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<img src="upload/news-posts/list4.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Suspendisse urna nibh, viverra non, semper suscipit</a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<img src="upload/news-posts/list5.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Donec nec justo eget felis facilisis fermentum. </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- End grid box -->
+
+					<!-- google addsense -->
+					<div class="advertisement">
+						<div class="desktop-advert">
+							<span>Advertisement</span>
+							<img src="upload/addsense/600x80.jpg" alt="">
+						</div>
+						<div class="tablet-advert">
+							<span>Advertisement</span>
+							<img src="upload/addsense/468x60-white.jpg" alt="">
+						</div>
+						<div class="mobile-advert">
+							<span>Advertisement</span>
+							<img src="upload/addsense/300x250.jpg" alt="">
+						</div>
+					</div>
+					<!-- End google addsense -->
+
+					<!-- grid box -->
+					<div class="grid-box">
+
+						<div class="title-section">
+							<h1><span>Gatgets &amp; Apps</span></h1>
+						</div>
+
+						<div class="row">
+
+							<div class="col-md-4">
+								<div class="news-post standard-post">
+									<div class="post-gallery">
+										<img src="upload/news-posts/st1.jpg" alt="">
+									</div>
+									<div class="post-content">
+										<h2><a href="single-post.html">Nam nulla quam, gravida non, commodo</a></h2>
 										<ul class="post-tags">
 											<li><i class="fa fa-clock-o"></i>27 may 2013</li>
-											<li><i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
 											<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
-											<li><i class="fa fa-eye"></i>872</li>
 										</ul>
 									</div>
 								</div>
 							</div>
-						</li>
-						<li>
-							<div class="news-post image-post">
-								<img src="upload/news-posts/h4.jpg" alt="">
-								<div class="hover-box">
-									<div class="inner-hover">
-										<a class="category-post sport" href="sport.html">sport</a>
-										<h2><a href="single-post.html">Donec odio. Quisque volutpat mattis eros. </a></h2>
+
+							<div class="col-md-4">
+								<div class="news-post standard-post">
+									<div class="post-gallery">
+										<img src="upload/news-posts/st2.jpg" alt="">
+									</div>
+									<div class="post-content">
+										<h2><a href="single-post.html">Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</a></h2>
 										<ul class="post-tags">
 											<li><i class="fa fa-clock-o"></i>27 may 2013</li>
-											<li><i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
 											<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
-											<li><i class="fa fa-eye"></i>872</li>
 										</ul>
-										<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
 									</div>
 								</div>
 							</div>
-						</li>
-					</ul>
-				</div>
 
-				<div class="news-post image-post">
-					<img src="upload/news-posts/h3.jpg" alt="">
-					<div class="hover-box">
-						<div class="inner-hover">
-							<a class="category-post food" href="food.html">food &amp; Health</a>
-							<h2><a href="single-post.html">Nullam malesuada erat ut turpis.</a></h2>
-							<ul class="post-tags">
-								<li><i class="fa fa-clock-o"></i><span>27 may 2013</span></li>
-								<li><a href="#"><i class="fa fa-comments-o"></i><span>20</span></a></li>
-							</ul>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+							<div class="col-md-4">
+								<div class="news-post standard-post">
+									<div class="post-gallery">
+										<img src="upload/news-posts/st3.jpg" alt="">
+									</div>
+									<div class="post-content">
+										<h2><a href="single-post.html">Phasellus ultrices nulla quis nibh. Quisque a lectus.</a></h2>
+										<ul class="post-tags">
+											<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row">
+
+							<div class="col-md-4">
+								<div class="news-post standard-post">
+									<div class="post-gallery">
+										<img src="upload/news-posts/st4.jpg" alt="">
+									</div>
+									<div class="post-content">
+										<h2><a href="single-post.html">Pellentesque egestas sem. Suspendisse commodo </a></h2>
+										<ul class="post-tags">
+											<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="news-post standard-post">
+									<div class="post-gallery">
+										<img src="upload/news-posts/st5.jpg" alt="">
+									</div>
+									<div class="post-content">
+										<h2><a href="single-post.html">Nulla vitae mauris non felis mollis faucibus.</a></h2>
+										<ul class="post-tags">
+											<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="news-post standard-post">
+									<div class="post-gallery">
+										<img src="upload/news-posts/st6.jpg" alt="">
+									</div>
+									<div class="post-content">
+										<h2><a href="single-post.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></h2>
+										<ul class="post-tags">
+											<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<!-- End grid box -->
+
+					<!-- galery box -->
+					<div class="galery-box">
+
+						<div class="title-section">
+							<h1><span>Video News</span></h1>
+						</div>
+
+						<ul class="slider-call2">
+							<li>
+								<div class="news-post video-post">
+									<img alt="" src="upload/news-posts/im-large1.jpg">
+									<a href="https://www.youtube.com/watch?v=LL59es7iy8Q" class="video-link"><i class="fa fa-play"></i></a>
+									<div class="hover-box">
+										<h2><a href="single-post.html">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </a></h2>
+										<ul class="post-tags">
+											<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="news-post video-post">
+									<img alt="" src="upload/news-posts/im-large2.jpg">
+									<a href="https://www.youtube.com/watch?v=LL59es7iy8Q" class="video-link"><i class="fa fa-play"></i></a>
+									<div class="hover-box">
+										<h2><a href="single-post.html">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </a></h2>
+										<ul class="post-tags">
+											<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="news-post video-post">
+									<img alt="" src="upload/news-posts/im-large3.jpg">
+									<a href="https://www.youtube.com/watch?v=LL59es7iy8Q" class="video-link"><i class="fa fa-play"></i></a>
+									<div class="hover-box">
+										<h2><a href="single-post.html">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </a></h2>
+										<ul class="post-tags">
+											<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div id="bx-pager2">
+							<a data-slide-index="0" href=""><img src="upload/news-posts/im-thumb1.jpg" alt=""/></a>
+							<a data-slide-index="1" href=""><img src="upload/news-posts/im-thumb2.jpg" alt=""/></a>
+							<a data-slide-index="2" href=""><img src="upload/news-posts/im-thumb3.jpg" alt=""/></a>
 						</div>
 					</div>
-				</div>
+					<!-- End galery box -->
 
-				<div class="news-post image-post">
-					<img src="upload/news-posts/h1.jpg" alt="">
-					<div class="hover-box">
-						<div class="inner-hover">
-							<a class="category-post travel" href="travel.html">Travel</a>
-							<h2><a href="single-post.html">Lorem ipsum dolor sit amet, consectetuer</a></h2>
-							<ul class="post-tags">
-								<li><i class="fa fa-clock-o"></i><span>27 may 2013</span></li>
-								<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
-							</ul>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+					<!-- article box -->
+					<div class="article-box">
+						<div class="title-section">
+							<h1><span>Latest Articles</span></h1>
 						</div>
-					</div>
-				</div>
+						
+						<div class="news-post standard-post2">
+							<div class="post-gallery">
+								<img src="upload/news-posts/art1.jpg" alt="">
+							</div>
+							<div class="post-title">
+								<h2><a href="single-post.html">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </a></h2>
+								<ul class="post-tags">
+									<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									<li><i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
+									<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+									<li><i class="fa fa-eye"></i>872</li>
+								</ul>
+							</div>
+							<div class="post-content">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+								<a href="single-post.html" class="read-more-button"><i class="fa fa-angle-right"></i><span>Read More</span></a>
+							</div>
+						</div>
+						
+						<div class="news-post standard-post2">
+							<div class="post-gallery">
+								<img src="upload/news-posts/art2.jpg" alt="">
+							</div>
+							<div class="post-title">
+								<h2><a href="single-post.html">Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</a></h2>
+								<ul class="post-tags">
+									<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									<li><i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
+									<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+									<li><i class="fa fa-eye"></i>872</li>
+								</ul>
+							</div>
+							<div class="post-content">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+								<a href="single-post.html" class="read-more-button"><i class="fa fa-angle-right"></i><span>Read More</span></a>
+							</div>
+						</div>
+						
+						<div class="news-post standard-post2">
+							<div class="post-gallery">
+								<img src="upload/news-posts/art3.jpg" alt="">
+							</div>
+							<div class="post-title">
+								<h2><a href="single-post.html">Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</a></h2>
+								<ul class="post-tags">
+									<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									<li><i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
+									<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+									<li><i class="fa fa-eye"></i>872</li>
+								</ul>
+							</div>
+							<div class="post-content">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+								<a href="single-post.html" class="read-more-button"><i class="fa fa-angle-right"></i><span>Read More</span></a>
+							</div>
+						</div>
+						
+						<div class="news-post standard-post2">
+							<div class="post-gallery">
+								<img src="upload/news-posts/art4.jpg" alt="">
+							</div>
+							<div class="post-title">
+								<h2><a href="single-post.html">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</a></h2>
+								<ul class="post-tags">
+									<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									<li><i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
+									<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+									<li><i class="fa fa-eye"></i>872</li>
+								</ul>
+							</div>
+							<div class="post-content">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+								<a href="single-post.html" class="read-more-button"><i class="fa fa-angle-right"></i><span>Read More</span></a>
+							</div>
+						</div>
 
-				<div class="news-post image-post">
-					<img src="upload/news-posts/h5.jpg" alt="">
-					<div class="hover-box">
-						<div class="inner-hover">
-							<a class="category-post sport" href="sport.html">sport</a>
-							<h2><a href="single-post.html">Donec odio. </a></h2>
-							<ul class="post-tags">
-								<li><i class="fa fa-clock-o"></i><span>27 may 2013</span></li>
-								<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
-							</ul>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
-						</div>
 					</div>
-				</div>
+					<!-- End article box -->
 
-				<div class="news-post image-post">
-					<img src="upload/news-posts/h6.jpg" alt="">
-					<div class="hover-box">
-						<div class="inner-hover">
-							<a class="category-post fashion" href="fashion.html">fashion</a>
-							<h2><a href="single-post.html">Quisque volutpat mattis </a></h2>
-							<ul class="post-tags">
-								<li><i class="fa fa-clock-o"></i><span>27 may 2013</span></li>
-								<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
-							</ul>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
-						</div>
+					<!-- Pagination box -->
+					<div class="pagination-box">
+						<ul class="pagination-list">
+							<li><a class="active" href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><span>...</span></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+						<p>Page 1 of 9</p>
 					</div>
-				</div>
+					<!-- End Pagination box -->
 
-				<div class="news-post image-post">
-					<img src="upload/news-posts/h5.jpg" alt="">
-					<div class="hover-box">
-						<div class="inner-hover">
-							<a class="category-post sport" href="sport.html">sport</a>
-							<h2><a href="single-post.html">Donec odio. </a></h2>
-							<ul class="post-tags">
-								<li><i class="fa fa-clock-o"></i><span>27 may 2013</span></li>
-								<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
-							</ul>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
-						</div>
-					</div>
 				</div>
-
-				<div class="news-post image-post">
-					<img src="upload/news-posts/h6.jpg" alt="">
-					<div class="hover-box">
-						<div class="inner-hover">
-							<a class="category-post fashion" href="fashion.html">fashion</a>
-							<h2><a href="single-post.html">Quisque volutpat mattis </a></h2>
-							<ul class="post-tags">
-								<li><i class="fa fa-clock-o"></i><span>27 may 2013</span></li>
-								<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
-							</ul>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="news-post image-post">
-					<img src="upload/news-posts/h3.jpg" alt="">
-					<div class="hover-box">
-						<div class="inner-hover">
-							<a class="category-post food" href="food.html">food &amp; Health</a>
-							<h2><a href="single-post.html">Nullam malesuada erat ut turpis.</a></h2>
-							<ul class="post-tags">
-								<li><i class="fa fa-clock-o"></i><span>27 may 2013</span></li>
-								<li><a href="#"><i class="fa fa-comments-o"></i><span>20</span></a></li>
-							</ul>
-							<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
-						</div>
-					</div>
-				</div>
+				<!-- End block content -->
 
 			</div>
 
+			<div class="col-md-3 col-sm-4">
+
+				<!-- sidebar -->
+				<div class="sidebar large-sidebar">
+
+					<div class="widget social-widget">
+						<div class="title-section">
+							<h1><span>Stay Connected</span></h1>
+						</div>
+						<ul class="social-share">
+							<li>
+								<a href="#" class="rss"><i class="fa fa-rss"></i></a>
+								<span class="number">9,455</span>
+								<span>Subscribers</span>
+							</li>
+							<li>
+								<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+								<span class="number">56,743</span>
+								<span>Fans</span>
+							</li>
+							<li>
+								<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+								<span class="number">43,501</span>
+								<span>Followers</span>
+							</li>
+							<li>
+								<a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+								<span class="number">35,003</span>
+								<span>Followers</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="widget tab-posts-widget">
+
+						<ul class="nav nav-tabs" id="myTab">
+							<li class="active">
+								<a href="#option1" data-toggle="tab">Popular</a>
+							</li>
+							<li>
+								<a href="#option2" data-toggle="tab">Recent</a>
+							</li>
+						</ul>
+
+						<div class="tab-content">
+							<div class="tab-pane active" id="option1">
+								<ul class="list-posts">
+									<li>
+										<img src="upload/news-posts/listw1.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<img src="upload/news-posts/listw2.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Sed arcu. Cras consequat. </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<img src="upload/news-posts/listw3.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Phasellus ultrices nulla quis nibh. Quisque a lectus.  </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<img src="upload/news-posts/listw4.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Donec consectetuer ligula vulputate sem tristique cursus. </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<img src="upload/news-posts/listw5.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi. </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-pane" id="option2">
+								<ul class="list-posts">
+
+									<li>
+										<img src="upload/news-posts/listw3.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Phasellus ultrices nulla quis nibh. Quisque a lectus. </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<img src="upload/news-posts/listw4.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Donec consectetuer ligula vulputate sem tristique cursus. </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<img src="upload/news-posts/listw5.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<img src="upload/news-posts/listw1.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. </a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+
+									<li>
+										<img src="upload/news-posts/listw2.jpg" alt="">
+										<div class="post-content">
+											<h2><a href="single-post.html">Sed arcu. Cras consequat.</a></h2>
+											<ul class="post-tags">
+												<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+											</ul>
+										</div>
+									</li>
+								</ul>										
+							</div>
+						</div>
+					</div>
+
+					<div class="widget post-widget">
+						<div class="title-section">
+							<h1><span>Most Read</span></h1>
+						</div>
+						<ul class="list-posts">
+							<li>
+								<div class="post-content">
+									<h2><a href="single-post.html">Sed arcu. Cras consequat.</a></h2>
+									<ul class="post-tags">
+										<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									</ul>
+								</div>
+							</li>
+
+							<li>
+								<div class="post-content">
+									<h2><a href="single-post.html">Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. </a></h2>
+									<ul class="post-tags">
+										<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									</ul>
+								</div>
+							</li>
+
+							<li>
+								<div class="post-content">
+									<h2><a href="single-post.html">Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. </a></h2>
+									<ul class="post-tags">
+										<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="post-content">
+									<h2><a href="single-post.html">Phasellus ultrices nulla quis nibh. Quisque a lectus.</a></h2>
+									<ul class="post-tags">
+										<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									</ul>
+								</div>
+							</li>
+
+							<li>
+								<div class="post-content">
+									<h2><a href="single-post.html">Pellentesque fermentum dolor.</a></h2>
+									<ul class="post-tags">
+										<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="widget features-slide-widget">
+						<div class="title-section">
+							<h1><span>Special Reports</span></h1>
+						</div>
+						<div class="news-post standard-post2">
+							<div class="post-gallery">
+								<img src="upload/news-posts/im1.jpg" alt="">
+							</div>
+							<div class="post-title">
+								<h2><a href="single-post.html">Donec nec justo eget felis facilisis fermentum. </a></h2>
+								<ul class="post-tags">
+									<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									<li><i class="fa fa-user"></i>by <a href="#">John Doe</a></li>
+									<li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<ul class="list-posts">
+
+							<li>
+								<img src="upload/news-posts/listw5.jpg" alt="">
+								<div class="post-content">
+									<h2><a href="single-post.html">Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</a></h2>
+									<ul class="post-tags">
+										<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<img src="upload/news-posts/listw1.jpg" alt="">
+								<div class="post-content">
+									<h2><a href="single-post.html">Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. </a></h2>
+									<ul class="post-tags">
+										<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									</ul>
+								</div>
+							</li>
+
+							<li>
+								<img src="upload/news-posts/listw2.jpg" alt="">
+								<div class="post-content">
+									<h2><a href="single-post.html">Sed arcu. Cras consequat.</a></h2>
+									<ul class="post-tags">
+										<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="advertisement">
+						<div class="desktop-advert">
+							<span>Advertisement</span>
+							<img src="upload/addsense/250x250.jpg" alt="">
+						</div>
+						<div class="tablet-advert">
+							<span>Advertisement</span>
+							<img src="upload/addsense/200x200.jpg" alt="">
+						</div>
+						<div class="mobile-advert">
+							<span>Advertisement</span>
+							<img src="upload/addsense/300x250.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="widget post-widget">
+						<div class="title-section">
+							<h1><span>Featured Video</span></h1>
+						</div>
+						<div class="news-post video-post">
+							<img alt="" src="upload/news-posts/video-sidebar.jpg">
+							<a href="https://www.youtube.com/watch?v=LL59es7iy8Q" class="video-link"><i class="fa fa-play-circle-o"></i></a>
+							<div class="hover-box">
+								<h2><a href="single-post.html">Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. </a></h2>
+								<ul class="post-tags">
+									<li><i class="fa fa-clock-o"></i>27 may 2013</li>
+								</ul>
+							</div>
+							<p></p>
+						</div>
+					</div>
+
+					<div class="widget subscribe-widget">
+						<form class="subscribe-form">
+							<h1>Subscribe to RSS Feeds</h1>
+							<input type="text" name="sumbscribe" id="subscribe" placeholder="Email"/>
+							<button id="submit-subscribe">
+								<i class="fa fa-arrow-circle-right"></i>
+							</button>
+							<p>Get all latest content delivered to your email a few times a month.</p>
+						</form>
+					</div>
+
+				</div>
+				<!-- End sidebar -->
+
+			</div>
+
+		</div>
+
+	</div>
 </section>

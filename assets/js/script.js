@@ -91,21 +91,6 @@ $(document).ready(function($) {
 	/*-------------------------------------------------*/
 	/* = ticker news
 	/*-------------------------------------------------*/
-	
-	$('a.toogle-box').on('click', function(event){
-		event.preventDefault();
-		if(!$(this).hasClass('active')) {
-			$(this).addClass('active');
-			$('div.versions-box-choose').addClass('closed');
-		} else {
-			$(this).removeClass('active');
-			$('div.versions-box-choose').removeClass('closed');
-		}
-	});
-
-	/*-------------------------------------------------*/
-	/* = ticker news
-	/*-------------------------------------------------*/
 
 	try{		
 		$('#js-news').ticker({
@@ -230,6 +215,8 @@ $(document).ready(function($) {
 	/* =  comming soon & error height fix
 	/*-------------------------------------------------*/
 	
+	/*$('.error-section, .comming-soon-section').css('min-height', $(window).height() - $('.navbar-default').height());*/
+
 	try {
 
 		$('#clock').countdown("2016/04/29", function(event) {
